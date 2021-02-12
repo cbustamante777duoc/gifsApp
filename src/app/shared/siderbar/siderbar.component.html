@@ -4,9 +4,10 @@
     </h3>
     <hr class="text-white">
     <div class="list-group list-reset">
-      <a href="#"
-         class="list-group-item list-group-item-action text-center">
-        Inicio
+      <a *ngFor="let item of historial"
+       href="#"
+        class="list-group-item list-group-item-action text-center">
+        {{item}}
       </a>
     </div>
   </div>
