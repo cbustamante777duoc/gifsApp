@@ -20,6 +20,12 @@ export class BusquedaComponent {
   buscar(){
     //recoge el valor que envia el usuario
     const valor = this.txtBuscar.nativeElement.value;
+
+    //evitar caracterez vacios
+    if (valor.trim().length===0) {
+      return;
+    }
+
     //inserta un elemento en arreglo de historial (gifs.service.ts)
     this.gifsService.buscarGifs(valor);
     //limpia el input

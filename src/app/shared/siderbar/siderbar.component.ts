@@ -12,6 +12,8 @@ export class SiderbarComponent  {
     return this.gifsService.historial;
   }
   
+  
+  
   constructor(private gifsService:GifsService) { }
 
   
